@@ -1,9 +1,14 @@
 import Image from "next/legacy/image";
+import { useState } from "react";
+import { VscPlay } from "react-icons/vsc";
 
 // components
 import { SectionHeader, SectionTitle } from "../shared/SharedTextGroup";
+import VideoModal from "../shared/VideoModal";
 
 const WorkingProcess = ({ data }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const { header, title, subTitle, img, points } = data;
 
   return (
@@ -14,6 +19,7 @@ const WorkingProcess = ({ data }) => {
       data-aos-once="false"
       className="container py-6 md:py-10 xl:py-16"
     >
+      {isOpen && <VideoModal setIsOpen={setIsOpen} video="/videos/dummy.mp4" />}
       <div className="grid md:grid-cols-2 items-center gap-6">
         <div className="lg:w-4/5">
           <SectionHeader label={header} />
@@ -41,12 +47,25 @@ const WorkingProcess = ({ data }) => {
             })}
           </div>
         </div>
-        <Image
-          src={img}
-          alt="working process section"
-          height={1043}
-          width={1200}
-        />
+        <div
+          onClick={() => setIsOpen(true)}
+          className="relative cursor-pointer group"
+        >
+          <div className="relative w-full">
+            <Image
+              src={img}
+              alt="working process section"
+              height={1043}
+              width={1200}
+            />
+          </div>
+          <div className="absolute top-[55%] left-[65%] -translate-x-[65%] -translate-y-[55%]">
+            <div className="bg-[#E6F0FF] h-9 lg:h-14 xl:h-20 w-9 lg:w-14 xl:w-20 relative rounded-full flex justify-center items-center">
+              <VscPlay className="text-[#0047B3] lg:text-2xl xl:text-4xl z-10 ml-1 xl:ml-1.5" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E6F0FF] opacity-75" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

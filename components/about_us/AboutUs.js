@@ -21,23 +21,22 @@ const AboutUs = ({ data }) => {
       data-aos-once="false"
       className="container py-6 md:py-10 xl:py-16"
     >
-      {isOpen && <VideoModal setIsOpen={setIsOpen} />}
+      {isOpen && <VideoModal setIsOpen={setIsOpen} video="/videos/dummy.mp4" />}
       <div className="grid lg:grid-cols-2 gap-6 xl:gap-9">
         <div
           onClick={() => setIsOpen(true)}
-          className="relative cursor-pointer group"
+          className="relative cursor-pointer group h-[180px] md:h-80 lg:h-96 xl:h-[466px] w-full rounded-xl xl:rounded-[20px] overflow-hidden"
         >
-          <div className="relative h-[180px] md:h-80 lg:h-full w-full max-h-[466px] rounded-xl xl:rounded-[20px] overflow-hidden">
-            <Image
-              src={img}
-              alt="about us section"
-              layout="fill"
-              className="object-cover scale-[101%] group-hover:scale-105 transition-all duration-1000"
-            />
-          </div>
+          <Image
+            src={img}
+            alt="about us section"
+            layout="fill"
+            objectFit="cover"
+            className="group-hover:scale-105 transition-all duration-1000"
+          />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div className="bg-white h-9 lg:h-20 w-9 lg:w-20 relative rounded-full flex justify-center items-center">
-              <VscPlay className="text-secondary-400 lg:text-4xl z-10 ml-1 lg:ml-1.5" />
+            <div className="bg-white h-9 md:h-14 xl:h-20 w-9 md:w-14 xl:w-20 relative rounded-full flex justify-center items-center">
+              <VscPlay className="text-secondary-400 md:text-2xl xl:text-4xl z-10 ml-1 lg:ml-1.5" />
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
             </div>
           </div>
