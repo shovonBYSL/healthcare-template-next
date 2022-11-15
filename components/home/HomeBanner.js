@@ -17,7 +17,7 @@ const HomeBanner = () => {
         viewBox="0 0 419 187"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-1 md:top-6 lg:top-4 left-0 w-10 md:w-32 lg:w-52 xl:w-60 2xl:w-80 max-w-[416px]"
+        className="z-10 absolute top-1 md:top-6 lg:top-4 xl:top-12 left-0 w-10 md:w-32 lg:w-52 xl:w-80 2xl:w-[416px]"
       >
         <path
           d="M417.5 184.54L365.5 150.54C255.5 84.5405 300.064 -39.5031 332.612 15.8518C373 84.5405 287.83 110.385 201 103.307C168.341 100.644 136.519 81.5572 107.5 84.5405C61.9298 89.2252 24.7031 124.382 2 139.645"
@@ -27,7 +27,7 @@ const HomeBanner = () => {
       </svg>
 
       <div className="container grid grid-cols-12 items-center gap-6">
-        <div className="col-span-12 md:col-span-7">
+        <div className="z-20 col-span-12 md:col-span-7">
           <p className="bg-primary-600 text-white text-xxs xxs:text-xs md:text-sm xl:text-base rounded-xl xl:rounded-[30px] px-2 xxs:px-3 xl:px-4 py-1 md:py-1.5 xl:py-2.5 mb-2 w-max">
             Solutions for Health Care
           </p>

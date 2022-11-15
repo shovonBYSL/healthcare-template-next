@@ -18,7 +18,7 @@
   width: 0%;
   height: 100%;
   background-color: #7bab38;
-  transition: all 0.5s;
+  transition: all 0.4s;
   z-index: -1;
 }
 
@@ -46,7 +46,7 @@
   width: 0%;
   height: 100%;
   background-color: #0091ff;
-  transition: all 0.5s;
+  transition: all 0.4s;
   z-index: -1;
 }
 
@@ -72,7 +72,7 @@
   width: 0%;
   height: 100%;
   background-color: #0091ff;
-  transition: all 0.5s;
+  transition: all 0.4s;
   z-index: -1;
 }
 
