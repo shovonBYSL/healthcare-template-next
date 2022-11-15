@@ -42,11 +42,11 @@ const HomeBanner = () => {
                 Appointment
               </button>
             </Link>
-            <a href="/doctors">
+            <Link href="/doctors">
               <button className="relative overflow-hidden btn-slide-outline-primary border border-primary-600 text-primary-600 hover:text-white text-xxs xxs:text-xs lg:text-sm xl:text-base rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 md:py-1.5 xl:py-2.5 mb-2 transition-all duration-500">
                 View Doctors
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-span-12 md:col-span-5">
