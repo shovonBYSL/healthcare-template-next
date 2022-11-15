@@ -23,9 +23,16 @@ const locationData = {
 };
 
 const contactGalleryPhotos = [
-  "/images/contact/gallery/0.png",
-  "/images/contact/gallery/1.png",
-  "/images/contact/gallery/2.png",
+  { src: "/images/contact/gallery/0.webp" },
+  { src: "/images/contact/gallery/1.webp" },
+  { src: "/images/contact/gallery/2.webp" },
+  { src: "/images/contact/gallery/3.webp" },
+  { src: "/images/contact/gallery/4.webp" },
+  { src: "/images/contact/gallery/5.webp" },
+  { src: "/images/contact/gallery/6.webp" },
+  { src: "/images/contact/gallery/7.webp" },
+  { src: "/images/contact/gallery/8.webp" },
+  { src: "/images/contact/gallery/9.webp" },
 ];
 
 const aboutHospitalData = {

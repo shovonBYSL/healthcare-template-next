@@ -19,7 +19,7 @@ const Locations = ({ data }) => {
         data-aos-once="false"
         className="container py-6 md:py-10 xl:py-16"
       >
-        <div className="flex flex-wrap md:flex-nowrap justify-evenly divide-y-[1px] sm:divide-x-[1px] sm:divide-y-0 divide-tertiary-100 text-center">
+        <div className="flex flex-wrap md:flex-nowrap justify-evenly divide-y-[1px] sm:divide-y-0 md:divide-x-[1px] divide-tertiary-100 text-center">
           {data.locations.map(({ id, city, address }) => {
             return (
               <div key={id} className="w-full max-w-xs mx-auto py-4">
