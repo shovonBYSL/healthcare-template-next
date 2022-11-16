@@ -1,6 +1,7 @@
-// components
 import Image from "next/legacy/image";
 import Link from "next/link";
+
+// components
 import { BannerSubTitle, BannerTitle } from "../shared/SharedTextGroup";
 
 const HomeBanner = () => {
@@ -22,7 +23,7 @@ const HomeBanner = () => {
         <path
           d="M417.5 184.54L365.5 150.54C255.5 84.5405 300.064 -39.5031 332.612 15.8518C373 84.5405 287.83 110.385 201 103.307C168.341 100.644 136.519 81.5572 107.5 84.5405C61.9298 89.2252 24.7031 124.382 2 139.645"
           stroke="#0084E8"
-          stroke-width="4"
+          strokeWidth="4"
         />
       </svg>
 
@@ -57,7 +58,7 @@ const HomeBanner = () => {
               placeholder="blur"
               blurDataURL="/images/home/home_banner.png"
               height={596}
-              width={526}
+              width={500}
               objectFit="contain"
               className="animate-img"
             />

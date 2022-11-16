@@ -47,7 +47,9 @@ const BlogSidebar = ({ data }) => {
                       <p className="text-tertiary-600 font-medium text-xs xl:text-sm">
                         {title}
                       </p>
-                      <p className="text-tertiary-90 text-xs xl:text-sm">{published}</p>
+                      <p className="text-tertiary-90 text-xs xl:text-sm">
+                        {published}
+                      </p>
                     </div>
                   </div>
                 </Link>
@@ -82,7 +84,10 @@ const BlogSidebar = ({ data }) => {
         <SidebarTitle label="Categories" />
         <div className="space-y-3 mt-3">
           {categories.map((label, i) => (
-            <p key={i} className="px-2.5 py-1 border-b text-xs xl:text-sm capitalize">
+            <p
+              key={i}
+              className="px-2.5 py-1 border-b text-xs xl:text-sm capitalize"
+            >
               {label} ({findNum(label)})
             </p>
           ))}

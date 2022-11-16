@@ -6,6 +6,8 @@ import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 // components
 import BlogListCard from "./BlogListCard";
 import BlogSidebar from "./BlogSidebar";
+
+// utility function
 import { scrollTop } from "../../utils/commonFunctions";
 
 const BlogListContent = ({ data }) => {

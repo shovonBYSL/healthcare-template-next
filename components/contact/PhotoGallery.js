@@ -1,5 +1,5 @@
-import Image from "next/legacy/image";
 import { useState } from "react";
+import Image from "next/legacy/image";
 import ImgsViewer from "react-images-viewer";
 
 const PhotoGallery = ({ data }) => {

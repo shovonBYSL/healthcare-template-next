@@ -2,6 +2,7 @@ import Image from "next/legacy/image";
 import { useState } from "react";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import { VscPlay } from "react-icons/vsc";
+import { motion, AnimatePresence } from "framer-motion";
 
 // components
 import { SectionHeader, SectionTitle } from "../shared/SharedTextGroup";
@@ -50,40 +51,55 @@ const AboutUs = ({ data }) => {
           <div>
             {details.map(({ id, title, info }) => {
               return (
-                <div
-                  key={id}
-                  onClick={() =>
-                    setAccordionActive(accordionActive === id ? "" : id)
-                  }
-                  className="cursor-pointer border-b"
-                >
-                  <div
-                    className={`flex justify-between items-center p-2 ${
-                      accordionActive === id
-                        ? "bg-secondary-100 transition-all duration-500"
-                        : "bg-transparent"
-                    }`}
+                <div key={id} className="cursor-pointer border-b">
+                  <motion.header
+                    initial={false}
+                    onClick={() =>
+                      setAccordionActive(accordionActive === id ? "" : id)
+                    }
+                    animate={{
+                      backgroundColor:
+                        accordionActive === id ? "#daeac3" : "#fff",
+                    }}
+                    className="flex justify-between items-center p-2"
                   >
                     <p className="text-tertiary-500 font-medium text-sm xl:text-base">
                       {title}
                     </p>
                     <HiOutlineChevronDown
-                      className={`transition-all duration-500 ${
+                      className={`transition-all duration-300 ${
                         accordionActive === id && "rotate-180"
                       }`}
                     />
-                  </div>
-                  <div
-                    className={`${
-                      accordionActive === id
-                        ? "max-h-[999px] opacity-1 visible transition-height"
-                        : "max-h-[0px] opacity-0 invisible overflow-hidden "
-                    }`}
-                  >
-                    <p className="p-2 text-tertiary-500 text-xs lg:text-sm xl:text-base">
-                      {info}
-                    </p>
-                  </div>
+                  </motion.header>
+                  <AnimatePresence initial={false}>
+                    {accordionActive === id && (
+                      <motion.section
+                        initial="collapsed"
+                        animate="open"
+                        exit="collapsed"
+                        variants={{
+                          open: { opacity: 1, height: "auto" },
+                          collapsed: { opacity: 0, height: 0 },
+                        }}
+                        transition={{
+                          duration: 0.4,
+                          ease: [0.04, 0.62, 0.23, 0.98],
+                        }}
+                      >
+                        <motion.div
+                          variants={{
+                            collapsed: { scale: 0.98 },
+                            open: { scale: 1 },
+                          }}
+                          transition={{ duration: 0.3 }}
+                          className="p-2 text-tertiary-500 text-xs lg:text-sm xl:text-base"
+                        >
+                          {info}
+                        </motion.div>
+                      </motion.section>
+                    )}
+                  </AnimatePresence>
                 </div>
               );
             })}

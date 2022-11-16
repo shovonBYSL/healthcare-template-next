@@ -5,6 +5,8 @@ import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 // component
 import { SectionHeader, SectionTitle } from "../shared/SharedTextGroup";
 import BlogGridCard from "./BlogGridCard";
+
+// utility function
 import { scrollTop } from "../../utils/commonFunctions";
 
 const BlogGridContent = ({ data }) => {

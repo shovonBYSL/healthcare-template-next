@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/legacy/image";
 import { useState } from "react";
 import { toast } from "react-toastify";
@@ -6,7 +7,6 @@ import { HiOutlineChevronDown } from "react-icons/hi";
 
 // data
 import { allDoctors } from "../../data/doctorsData";
-import Link from "next/link";
 
 const AppointmentForm = () => {
   const [name, setName] = useState("");

@@ -26,7 +26,7 @@ const Navbar = () => {
           isBig ? "max-h-14 lg:max-h-max" : "max-h-96 lg:max-h-max"
         }`}
       >
-        <Link href="/">
+        <Link href="/" priority="low">
           <div className="relative h-10 lg:h-16 w-[138px] lg:w-[200px]">
             <Image
               src="/images/logo/logo.svg"
