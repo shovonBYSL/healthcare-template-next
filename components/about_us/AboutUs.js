@@ -92,7 +92,7 @@ const AboutUs = ({ data }) => {
                             collapsed: { scale: 0.98 },
                             open: { scale: 1 },
                           }}
-                          transition={{ duration: 0.3 }}
+                          transition={{ duration: 0.4 }}
                           className="p-2 text-tertiary-500 text-xs lg:text-sm xl:text-base"
                         >
                           {info}
