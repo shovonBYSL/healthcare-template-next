@@ -142,7 +142,7 @@ const AppointmentForm = () => {
             />
             <button
               type="submit"
-              className="z-10 relative overflow-hidden btn-slide-secondary col-span-2 w-max mx-auto lg:mx-0 px-6 py-2.5 rounded-lg text-white text-xs md:text-sm xl:text-base"
+              className="z-10 relative overflow-hidden btn-slide-secondary col-span-2 w-max mx-auto lg:mx-0 px-6 py-2.5 rounded-lg text-white text-xs md:text-sm xl:text-base shadow-[0px_8px_16px_0px_rgba(145,158,171,0.16)]"
             >
               Make an Appointment
             </button>

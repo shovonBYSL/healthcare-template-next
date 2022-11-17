@@ -59,7 +59,7 @@ const GetInTouchForm = ({ title }) => {
         />
         <button
           type="submit"
-          className="z-10 relative overflow-hidden btn-slide-secondary  px-6 py-2 rounded-lg text-white text-xs md:text-sm xl:text-base"
+          className="z-10 relative overflow-hidden btn-slide-secondary px-6 py-2 rounded-lg text-white text-xs md:text-sm xl:text-base shadow-[0px_8px_16px_0px_rgba(145,158,171,0.16)]"
         >
           Get In Touch
         </button>
