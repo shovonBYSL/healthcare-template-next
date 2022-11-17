@@ -1,7 +1,11 @@
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
 const GetInTouchForm = ({ title }) => {
+  const router = useRouter();
+  const contactPath = router.pathname === "/contact";
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -23,7 +27,7 @@ const GetInTouchForm = ({ title }) => {
       <p className="text-tertiary-500 font-semibold md:text-lg xl:text-2xl">
         {title.black} <span className="text-primary-600">{title.colored}</span>
       </p>
-      <form onSubmit={handleFormSubmit} className="my-6 xl:mb-9 space-y-4">
+      <form onSubmit={handleFormSubmit} className="mt-6 space-y-4">
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -49,7 +53,7 @@ const GetInTouchForm = ({ title }) => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           type="text"
-          rows="5"
+          rows={contactPath ? "7" : "5"}
           placeholder="Write Message here.."
           className="w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2 md:p-4 text-xs lg:text-sm xl:text-base outline-0 resize-none transition-all duration-300"
         />

@@ -33,7 +33,7 @@ const TestimonialSlider = () => {
       </div>
       <div className="grid grid-cols-12 md:gap-6 items-center testimonial-slider">
         <div className="p-2 cursor-pointer group">
-          <BsChevronLeft className="slidePrev-btn text-tertiary-100 group-hover:text-primary-600 mb-10" />
+          <BsChevronLeft className="slidePrev-btn xl:text-xl text-tertiary-100 group-hover:text-primary-600 mb-10" />
         </div>
         <div className="col-span-10">
           <Swiper
@@ -53,7 +53,7 @@ const TestimonialSlider = () => {
             modules={[Autoplay, Navigation, Pagination]}
             className="mySwiper"
           >
-            {testimonialData.map(({ id, name, address, comment, img }) => {
+            {testimonialData.map(({ id, name, address, comment }) => {
               return (
                 <SwiperSlide key={id} className="px-4">
                   <div className="grid grid-cols-10 space-y-2 mb-10">
@@ -84,7 +84,7 @@ const TestimonialSlider = () => {
           </Swiper>
         </div>
         <div className="p-2 cursor-pointer group">
-          <BsChevronRight className="slideNext-btn text-tertiary-100 group-hover:text-primary-600 md:ml-auto mb-10" />
+          <BsChevronRight className="slideNext-btn xl:text-xl text-tertiary-100 group-hover:text-primary-600 md:ml-auto mb-10" />
         </div>
       </div>
     </div>

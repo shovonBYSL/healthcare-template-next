@@ -28,18 +28,24 @@ const Footer = () => {
             return (
               <div
                 key={id}
-                className={`w-full py-6 lg:py-10 ${
+                className={`w-full ${
                   id === 1 ? "md:border-t md:border-b" : "border-t border-b"
                 }`}
               >
-                <p className="font-semibold lg:text-lg xl:text-2xl mb-2">
-                  {title}
-                </p>
-                {info.map((item, i) => (
-                  <p key={i} className="text-xs lg:text-sm xl:text-base">
-                    {item}
+                <div
+                  className={`py-6 md:py-2 lg:py-5 md:my-5 ${
+                    id === 1 && "md:border-l md:border-r"
+                  }`}
+                >
+                  <p className="font-semibold lg:text-lg xl:text-2xl mb-2">
+                    {title}
                   </p>
-                ))}
+                  {info.map((item, i) => (
+                    <p key={i} className="text-xs lg:text-sm xl:text-base">
+                      {item}
+                    </p>
+                  ))}
+                </div>
               </div>
             );
           })}

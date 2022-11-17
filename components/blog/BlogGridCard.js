@@ -7,8 +7,8 @@ const BlogGridCard = ({ data }) => {
   const { slug, title, author, summary, published, cardImg, likes, comments } =
     data;
 
-  const location = useRouter();
-  const homePath = location.pathname === "/";
+  const router = useRouter();
+  const homePath = router.pathname === "/";
 
   const Stats = ({ img, label }) => {
     return (

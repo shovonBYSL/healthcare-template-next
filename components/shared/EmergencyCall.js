@@ -3,7 +3,7 @@ import Image from "next/legacy/image";
 const EmergencyCall = () => {
   return (
     <div className="text-center">
-      <div className="relative h-16 lg:h-24 2xl:h-40 w-16 lg:w-24 2xl:w-40 mx-auto">
+      <div className="relative h-16 lg:h-24 xl:h-36 2xl:h-40 w-16 lg:w-24 xl:w-36 2xl:w-40 mx-auto">
         <Image
           src="/images/icons/phoneIcon.svg"
           alt="phone icon"
