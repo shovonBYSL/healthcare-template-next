@@ -100,7 +100,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="py-3 text-center text-xs lg:text-sm xl:text-base bg-primary-600">
-        copyright @{currentYear} reserved by&nbsp;
+        copyright &copy;{currentYear} reserved by&nbsp;
         <span className="xl:font-semibold">medical healthcare center</span>
       </p>
     </div>
