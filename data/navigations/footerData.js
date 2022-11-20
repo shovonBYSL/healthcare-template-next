@@ -32,7 +32,7 @@ const footerData = {
         {
           id: 1,
           label: "About Us",
-          path: "/about-us",
+          path: "/about",
         },
         {
           id: 2,
