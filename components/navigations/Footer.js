@@ -1,5 +1,6 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
+import { toast } from "react-toastify";
 
 // data
 import { footerData } from "../../data/navigations/footerData";
@@ -9,6 +10,11 @@ import { headerSocialLinks } from "../../data/navigations/headerData";
 import { currentYear } from "../../utils/commonFunctions";
 
 const Footer = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    toast.success("Thanks for subscribing");
+  };
+
   return (
     <div className="text-white bg-primary-700">
       <div className="container">
@@ -77,16 +83,19 @@ const Footer = () => {
             ))}
           </div>
           <div className="col-span-12 md:col-span-5 xl:col-span-4 w-max mx-auto md:mx-0 space-y-2 text-center md:text-start">
-            <div className="flex items-center gap-3">
+            <form onSubmit={handleSubmit} className="flex items-center gap-3">
               <input
                 type="email"
                 placeholder="Enter your email adderss"
                 className="bg-transparent border rounded px-3 md:px-4 py-2 placeholder-white text-xs lg:text-sm xl:text-base outline-0 focus:shadow-xl"
               />
-              <button className="px-3 lg:px-7 py-2 bg-primary-500 hover:bg-primary-600 hover:shadow-xl rounded border text-xs lg:text-sm xl:text-base transition-all duration-300">
+              <button
+                type="submit"
+                className="px-3 lg:px-7 py-2 bg-primary-500 hover:bg-primary-600 hover:shadow-xl rounded border text-xs lg:text-sm xl:text-base transition-all duration-300"
+              >
                 Send
               </button>
-            </div>
+            </form>
             <p className="text-xs lg:text-sm">Subcribe to get updates</p>
             <p className="font-semibold pt-4">Follow Us</p>
             <div className="flex items-center gap-2 w-max mx-auto md:mx-0">
