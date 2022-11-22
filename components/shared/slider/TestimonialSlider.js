@@ -74,7 +74,7 @@ const TestimonialSlider = () => {
                         </p>
                       </div>
                     </div>
-                    <p className="col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600">
+                    <p className="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600">
                       “{comment}”
                     </p>
                   </div>

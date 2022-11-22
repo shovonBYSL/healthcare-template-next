@@ -25,6 +25,29 @@ select {
 
 /* select option end */
 
+
+.bar{
+  position: relative;
+}
+
+.bar:before{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  border-radius: 10px;
+  background-color: #858585;
+  margin-left: -10px;
+}
+@media (min-width: 1024px) {
+  .bar:before{
+    margin-left: -20px;
+  }
+}
+
 /* custom scrollbar start */
 
 ::-webkit-scrollbar {
