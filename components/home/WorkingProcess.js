@@ -47,10 +47,7 @@ const WorkingProcess = ({ data }) => {
             })}
           </div>
         </div>
-        <div
-          onClick={() => setIsOpen(true)}
-          className="relative cursor-pointer group"
-        >
+        <div className="relative cursor-pointer group">
           <div className="relative w-full">
             <Image
               src={img}
@@ -59,7 +56,10 @@ const WorkingProcess = ({ data }) => {
               width={1200}
             />
           </div>
-          <div className="absolute top-[55%] left-[65%] -translate-x-[65%] -translate-y-[55%]">
+          <div
+            onClick={() => setIsOpen(true)}
+            className="absolute top-[55%] left-[65%] -translate-x-[65%] -translate-y-[55%]"
+          >
             <div className="bg-[#E6F0FF] h-9 lg:h-14 xl:h-20 w-9 lg:w-14 xl:w-20 relative rounded-full flex justify-center items-center">
               <VscPlay className="text-[#0047B3] lg:text-2xl xl:text-4xl z-10 ml-1 xl:ml-1.5" />
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E6F0FF] opacity-75" />

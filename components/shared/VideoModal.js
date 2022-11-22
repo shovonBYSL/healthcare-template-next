@@ -13,6 +13,7 @@ const VideoModal = ({ setIsOpen, video }) => {
           src={video}
           autoPlay
           controls
+          loop
         />
         <AiOutlinePlus
           onClick={() => setIsOpen(false)}
