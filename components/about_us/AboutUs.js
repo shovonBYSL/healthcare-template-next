@@ -1,5 +1,5 @@
 import Image from "next/legacy/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { VscPlay } from "react-icons/vsc";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -12,6 +12,12 @@ const AboutUs = ({ data }) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [accordionActive, setAccordionActive] = useState(0);
+
+  useEffect(() => {
+    isOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "");
+  }, [isOpen]);
 
   return (
     <div

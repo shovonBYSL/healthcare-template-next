@@ -1,5 +1,5 @@
 import Image from "next/legacy/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { VscPlay } from "react-icons/vsc";
 
 // components
@@ -7,9 +7,15 @@ import { SectionHeader, SectionTitle } from "../shared/SharedTextGroup";
 import VideoModal from "../shared/VideoModal";
 
 const WorkingProcess = ({ data }) => {
+  const { header, title, subTitle, img, points } = data;
+
   const [isOpen, setIsOpen] = useState(false);
 
-  const { header, title, subTitle, img, points } = data;
+  useEffect(() => {
+    isOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "");
+  }, [isOpen]);
 
   return (
     <div
