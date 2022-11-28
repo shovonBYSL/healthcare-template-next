@@ -3,15 +3,13 @@ import Image from "next/legacy/image";
 const Locations = ({ data }) => {
   return (
     <>
-      <div className="relative h-36 md:h-52 xl:h-[360px] w-full">
-        <Image
-          src={data.map}
-          alt="map"
-          layout="fill"
-          objectFit="cover"
-          priority
-        />
-      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29189.52096269558!2d-104.99969492613215!3d39.73582207520166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1669615671334!5m2!1sen!2sbd"
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        className="h-[150px] md:h-[250px] lg:h-[360px] w-full object-cover"
+      />
       <div
         data-aos="fade-up"
         data-aos-delay="20"
