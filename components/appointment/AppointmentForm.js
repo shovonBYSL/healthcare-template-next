@@ -62,7 +62,7 @@ const AppointmentForm = () => {
             <input
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              type="number"
+              type="text"
               placeholder="Phone*"
               className="col-span-2 md:col-span-1 w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"
             />
