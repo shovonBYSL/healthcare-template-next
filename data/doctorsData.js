@@ -34,6 +34,10 @@ const allDoctors = [
     img: "/images/doctors/all_doctors/0.png",
     socialLinks: [
       {
+        name: "linkedIn",
+        path: "https://www.linkedin.com/",
+      },
+      {
         name: "facebook",
         path: "https://www.facebook.com/",
       },
@@ -44,10 +48,6 @@ const allDoctors = [
       {
         name: "instagram",
         path: "https://www.instagram.com/",
-      },
-      {
-        name: "linkedIn",
-        path: "https://www.linkedin.com/",
       },
     ],
   },
@@ -60,6 +60,10 @@ const allDoctors = [
     img: "/images/doctors/all_doctors/1.png",
     socialLinks: [
       {
+        name: "linkedIn",
+        path: "https://www.linkedin.com/",
+      },
+      {
         name: "facebook",
         path: "https://www.facebook.com/",
       },
@@ -70,10 +74,6 @@ const allDoctors = [
       {
         name: "instagram",
         path: "https://www.instagram.com/",
-      },
-      {
-        name: "linkedIn",
-        path: "https://www.linkedin.com/",
       },
     ],
   },
@@ -86,6 +86,10 @@ const allDoctors = [
     img: "/images/doctors/all_doctors/2.png",
     socialLinks: [
       {
+        name: "linkedIn",
+        path: "https://www.linkedin.com/",
+      },
+      {
         name: "facebook",
         path: "https://www.facebook.com/",
       },
@@ -96,10 +100,6 @@ const allDoctors = [
       {
         name: "instagram",
         path: "https://www.instagram.com/",
-      },
-      {
-        name: "linkedIn",
-        path: "https://www.linkedin.com/",
       },
     ],
   },
@@ -112,6 +112,10 @@ const allDoctors = [
     img: "/images/doctors/all_doctors/3.png",
     socialLinks: [
       {
+        name: "linkedIn",
+        path: "https://www.linkedin.com/",
+      },
+      {
         name: "facebook",
         path: "https://www.facebook.com/",
       },
@@ -122,10 +126,6 @@ const allDoctors = [
       {
         name: "instagram",
         path: "https://www.instagram.com/",
-      },
-      {
-        name: "linkedIn",
-        path: "https://www.linkedin.com/",
       },
     ],
   },
@@ -138,6 +138,10 @@ const allDoctors = [
     img: "/images/doctors/all_doctors/4.png",
     socialLinks: [
       {
+        name: "linkedIn",
+        path: "https://www.linkedin.com/",
+      },
+      {
         name: "facebook",
         path: "https://www.facebook.com/",
       },
@@ -148,10 +152,6 @@ const allDoctors = [
       {
         name: "instagram",
         path: "https://www.instagram.com/",
-      },
-      {
-        name: "linkedIn",
-        path: "https://www.linkedin.com/",
       },
     ],
   },
@@ -164,6 +164,10 @@ const allDoctors = [
     img: "/images/doctors/all_doctors/5.png",
     socialLinks: [
       {
+        name: "linkedIn",
+        path: "https://www.linkedin.com/",
+      },
+      {
         name: "facebook",
         path: "https://www.facebook.com/",
       },
@@ -174,10 +178,6 @@ const allDoctors = [
       {
         name: "instagram",
         path: "https://www.instagram.com/",
-      },
-      {
-        name: "linkedIn",
-        path: "https://www.linkedin.com/",
       },
     ],
   },
@@ -190,6 +190,10 @@ const allDoctors = [
     img: "/images/doctors/all_doctors/6.png",
     socialLinks: [
       {
+        name: "linkedIn",
+        path: "https://www.linkedin.com/",
+      },
+      {
         name: "facebook",
         path: "https://www.facebook.com/",
       },
@@ -200,10 +204,6 @@ const allDoctors = [
       {
         name: "instagram",
         path: "https://www.instagram.com/",
-      },
-      {
-        name: "linkedIn",
-        path: "https://www.linkedin.com/",
       },
     ],
   },
@@ -216,6 +216,10 @@ const allDoctors = [
     img: "/images/doctors/all_doctors/7.png",
     socialLinks: [
       {
+        name: "linkedIn",
+        path: "https://www.linkedin.com/",
+      },
+      {
         name: "facebook",
         path: "https://www.facebook.com/",
       },
@@ -226,10 +230,6 @@ const allDoctors = [
       {
         name: "instagram",
         path: "https://www.instagram.com/",
-      },
-      {
-        name: "linkedIn",
-        path: "https://www.linkedin.com/",
       },
     ],
   },
@@ -242,6 +242,10 @@ const allDoctors = [
     img: "/images/doctors/all_doctors/8.png",
     socialLinks: [
       {
+        name: "linkedIn",
+        path: "https://www.linkedin.com/",
+      },
+      {
         name: "facebook",
         path: "https://www.facebook.com/",
       },
@@ -252,10 +256,6 @@ const allDoctors = [
       {
         name: "instagram",
         path: "https://www.instagram.com/",
-      },
-      {
-        name: "linkedIn",
-        path: "https://www.linkedin.com/",
       },
     ],
   },
@@ -268,6 +268,10 @@ const allDoctors = [
     img: "/images/doctors/all_doctors/9.png",
     socialLinks: [
       {
+        name: "linkedIn",
+        path: "https://www.linkedin.com/",
+      },
+      {
         name: "facebook",
         path: "https://www.facebook.com/",
       },
@@ -278,10 +282,6 @@ const allDoctors = [
       {
         name: "instagram",
         path: "https://www.instagram.com/",
-      },
-      {
-        name: "linkedIn",
-        path: "https://www.linkedin.com/",
       },
     ],
   },
@@ -294,6 +294,10 @@ const allDoctors = [
     img: "/images/doctors/all_doctors/10.png",
     socialLinks: [
       {
+        name: "linkedIn",
+        path: "https://www.linkedin.com/",
+      },
+      {
         name: "facebook",
         path: "https://www.facebook.com/",
       },
@@ -304,10 +308,6 @@ const allDoctors = [
       {
         name: "instagram",
         path: "https://www.instagram.com/",
-      },
-      {
-        name: "linkedIn",
-        path: "https://www.linkedin.com/",
       },
     ],
   },
@@ -320,6 +320,10 @@ const allDoctors = [
     img: "/images/doctors/all_doctors/11.png",
     socialLinks: [
       {
+        name: "linkedIn",
+        path: "https://www.linkedin.com/",
+      },
+      {
         name: "facebook",
         path: "https://www.facebook.com/",
       },
@@ -330,10 +334,6 @@ const allDoctors = [
       {
         name: "instagram",
         path: "https://www.instagram.com/",
-      },
-      {
-        name: "linkedIn",
-        path: "https://www.linkedin.com/",
       },
     ],
   },
