@@ -36,7 +36,7 @@ const Doctors = () => {
           <CommonBanner data={doctorsBannerData} />
           <AllDoctors data={allDoctors} />
           <SummaryCard />
-          <BulletPointsGallery data={doctorsSkillsData} />
+          <BulletPointsGallery data={doctorsSkillsData} reversed />
           <TestimonialSlider />
         </>
       )}
